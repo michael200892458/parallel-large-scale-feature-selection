@@ -1,3 +1,7 @@
+本项目的特征选择方式：
+    1. 将新特征在原来的老的LR模型基础上做增量训练，得出特征的权重beta和新模型。
+    2. 然后将新模型和老模型的AUC和损失函数计算出来，然后对比他们的auc增量和损失函数增量的方式来选择特征。
+    
 large-scale-feature-selection
 ===============================
 implementation of the method in this paper "Parallel Large Scale Feature Selection for Logistic Regression "
